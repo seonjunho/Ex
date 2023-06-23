@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    var a = parseInt(prompt("1번 숫자를 입력하시오", ""));
+    var b = prompt("사칙연산을 입력하시오.", "");
+    var c = parseInt(prompt("2번 숫자를 입력하시오", ""));
+    var res;
+    if (b == "+") {
+        res = a + c;
+    } else if (b == "-") {
+        res = a - c;
+    } else if (b == "*") {
+        res = a * c;
+    } else if (b == "/") {
+        res = a / c;
+    } else {
+        res = null;
+    }
+    document.write("결과 :" + res);
+</script>
+</body>
+</html>

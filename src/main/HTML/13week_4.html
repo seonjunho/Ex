@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    var day =prompt("요일을 입력:");
+
+    if(day == "Monday")
+        title = "월요일";
+    else if(day == "Tuesday")
+        title = "화요일";
+    else if(day == "Wednesday")
+        title = "수요일";
+    else if(day == "Thursday")
+        title = "목요일";
+    else if(day == "Friday")
+        title = "금요일";
+    else if(day == "Saturday")
+        title = "토요일";
+    else if(day == "Sunday")
+        title = "일요일";
+    else{
+        alert(" 다시 입력하시오. ");
+        title = "";
+    }
+    document.write("입력한 요일은 " + title + "입니다.");
+
+</script>
+</body>
+</html>
