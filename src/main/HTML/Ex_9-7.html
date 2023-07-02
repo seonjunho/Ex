@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+var win;
+function open_window() {
+  var url = prompt("원하는 URL 주소를 입력하시오");
+  if(url) win = window.open(url);
+}
+</script>
+
+<button oneclick="open_window();">Open a page with new window</button>
+<button oneclick="win.close();">Close the window</button>
+</body>
+</html>
