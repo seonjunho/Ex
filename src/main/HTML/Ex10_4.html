@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p> &lt;p&gt; 첫번째 태그</p>
+<p> &lt;p&gt; 두번째 태그</p>
+<p class ="myclass"> my class </p>
+<input type="button" value="네용 바꾸기" onclick="changecontent();">
+<script type="text/javascript">
+    function changecontent(){
+        p_elements = document.getElementsByTagName("p")
+        myclass_elements = document.getElementsByClassName("myclass")
+        p_elements[0].innerText = "<p> 첫번째 요소 내용 바꾸기";
+        p_elements[1].innerText = "<p> 투번째 요소 내용 바꾸기";
+        myclass_elements[0].innerText = "myclass 내용 바꾸기";
+    }
+</script>
+</body>
+</html>
