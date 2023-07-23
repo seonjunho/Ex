@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id=text" style="font-size: 12px">마우스 커서를 올리면 글자 크기가 커짐. 클릭시 색상도 변함.</p>
+
+<script type="text/javascript">
+  function largefont(){
+    document.getElementById("text").style.fontSize = "24px"
+  }
+  function normalfont(){
+    document.getElementById("text").style.fontSize = "12px"
+  }
+  function changecolor(){
+    r = Math.round(Math.random() * 255);
+    g = Math.round(Math.random() * 255);
+    b = Math.round(Math.random() * 255);
+    document.getElementById("text").style.color = "rgb(" + r + "," + g + "," + b + ")";
+  }
+  document.getElementById("text").onmouseover = largefont;
+  document.getElementById("text").onmouseout = normalfont;
+  document.getElementById("text").onclick = changecolor;
+</script>
+
+</body>
+</html>
