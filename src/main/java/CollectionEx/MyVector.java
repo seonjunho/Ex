@@ -1,6 +1,6 @@
 package CollectionEx;
 import java.util.*;
-public class MyVector implements List{
+public abstract class MyVector implements List{
     Object[] data = null; // 객체를 담기 위한 객체배열을 선언한다.
     int capacity = 0;    // 용량
     int size = 0 ;        // 크기
